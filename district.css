@@ -1,0 +1,26 @@
+h3{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 200px;
+    color: white;
+}
+body{
+    background-image: url("images/k.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.pbox{
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 0px;
+   
+    color: white;
+}
+.heading{
+    padding-top: 10%;
+    text-align: center;
+    padding-right: 5%;
+   
+}

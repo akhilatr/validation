@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>signUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="navbar">
+        
+            
+          </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="images/download (1).jpg " alt="" width="50" height="50">
+            </a>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="district.html">Districts</a>
+              <a class="nav-link" href="signin.html">Sign In</a> 
+              <a class="nav-link active" href="signup.html">Sign Up</a>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class= "col-lg-12"></div>
+      <div class= "col-lg-12 back">
+
+        <span class="border border-primary">
+      <form action="signin.html" onsubmit="return validate()">
+          <div class="sign">
+              <div class="text-dark">
+           
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-4">
+            <input type="email" required class="form-control" id="inputEmail3" pattern="([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputnumbr" class="col-sm-2 col-form-label">Phone NO:</label>
+          <div class="col-sm-4">
+            <input type="tel" required class="form-control" id="inputnumbr" pattern="(([0-9]{3})\)[-. ]?([0-9]{3})[-. ]?([0-9]{4})">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-4">
+            <input type="password" required class="form-control" id="inputPassword3"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Re-enter Password</label>
+            <div class="col-sm-4">
+              <input type="password" required class="form-control" id="inputpassword3"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+            </div>
+          </div>
+          <H6>Already have an Account?</H6>
+     <a href="signin.html">sign In</a>
+        <BR>
+        
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+
+      </form></span>
+      <div id="message">
+        <p>Password must contain the following:</p>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+      <script src="signup.js"></script>
+    </div></div>
+</div>
+
+</body>
+</html>
